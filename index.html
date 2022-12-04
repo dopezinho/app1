@@ -9,17 +9,28 @@
 <body>
     
 
-    <h1>Titulinho nene</h1>
+    <h1 id="titulo" class="link">Titulinho nene</h1>
 
-    <p>paragrafinho doido</p>
+    <p id="paragrafo">paragrafinho doido</p>
 
-    <p><a href="">voltar</a></p>
+    <p><a href="" class="link" name="meu_link">voltar</a></p>
 
 </body>
 </html>
 
 <script>
 
-    
+    document.querySelector("h1").style.fontSize="30pt"
+    document.querySelector("#titulo").style.fontSize="20pt"
+    document.querySelector("#paragrafo").style.fontSize="40pt"
+    document.querySelector(".link").style.fontSize="12pt"
+
+    document.getElementById("titulo").style.fontSize="45pt"
+    document.getElementById("paragrafo").style.color="purple"
+
+    console.log(document.getElementsByName("meu_link"))
+
+    document.getElementsByName("meu_link")[0].style.fontSize="35pt"
+    document.getElementsByClassName("link")[1].style.backgroundColor="yellow"
 
 </script>
